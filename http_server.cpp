@@ -9,6 +9,8 @@
 
 #define PORT 8080
 
+// not using pthreads or asynchronous i/o (yet?)
+
 // Function to parse the request line, headers, and body
 void parseHttpRequest(const std::string& request, std::string& method, std::string& path, std::string& http_version, std::map<std::string, std::string>& headers, std::string& body) {
     std::istringstream requestStream(request);
